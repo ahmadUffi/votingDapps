@@ -28,6 +28,11 @@
 								"type": "string"
 							},
 							{
+								"internalType": "string",
+								"name": "imgUrl",
+								"type": "string"
+							},
+							{
 								"internalType": "bool",
 								"name": "isRegistered",
 								"type": "bool"
@@ -51,6 +56,11 @@
 					{
 						"internalType": "string",
 						"name": "_bio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_imgurl",
 						"type": "string"
 					}
 				],
@@ -88,11 +98,11 @@
 	},
 	"sources": {
 		"contracts/Iprofile.sol": {
-			"keccak256": "0x32567555b61028df58c1fd0a3e180dd0efab89b2e5af35af973496b77b2e6c57",
+			"keccak256": "0x57fed4945a8bff69874ee8ab296248366d7438da6ecc45a7dcd1e24a52a43cec",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b1d1aae2ee6006b6f60ab2dec0b44264a886439edd2eff05a5e7fafa494668fa",
-				"dweb:/ipfs/QmYfmD6nHsgaq6yRVj35rMgfurQSdz4wXpT1yRrvnyhTnD"
+				"bzz-raw://d4f53e93fbacd0be83c074c0c148940ddf3b48b5fa613dd537bc7be73f058560",
+				"dweb:/ipfs/QmVcw5mTXBJ3v195zKd7QND9rsaJHdMwbv6GjYMqQsMDnH"
 			]
 		}
 	},

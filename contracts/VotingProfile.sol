@@ -5,13 +5,14 @@ contract VotingProfile {
     struct UserProfile{
         string username;
         string bio;
+        string imgUrl;
         bool isRegistered;
     }
 
     mapping(address => UserProfile) public profile;
 
-    function setProfile(string memory _username, string memory _bio) public {
-        profile[msg.sender] = UserProfile(_username, _bio, true);
+    function setProfile(string memory _username, string memory _bio, string memory _imgUrl) public {
+        profile[msg.sender] = UserProfile(_username, _bio, _imgUrl, true);
     }
 
     function getProfile(address _user) public view returns(UserProfile memory){

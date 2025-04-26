@@ -67,4 +67,21 @@ contract Voting is Ownable {
         hasvoted[msg.sender] = true;   
     }
 
+
+    function serach(string memory keyword) public view returns(Proposal[] memory result){
+        uint256 count = 0;
+        // hitung berapa yang cocok
+        for(uint i = 0; i < proposalList.length; i++){
+            
+        }
+    }
+
+    function contains(string memory str, string memory substr) internal pure returns(bool){
+        bytes memory stryBytes = bytes(str);
+        bytes memory subStrBytes = bytes(str);
+
+        for(uint i = 0; i < subStrBytes.length - subStrBytes.length; i++){
+            
+        }
+    }
 }

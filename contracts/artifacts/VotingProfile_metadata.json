@@ -28,6 +28,11 @@
 								"type": "string"
 							},
 							{
+								"internalType": "string",
+								"name": "imgUrl",
+								"type": "string"
+							},
+							{
 								"internalType": "bool",
 								"name": "isRegistered",
 								"type": "bool"
@@ -62,6 +67,11 @@
 						"type": "string"
 					},
 					{
+						"internalType": "string",
+						"name": "imgUrl",
+						"type": "string"
+					},
+					{
 						"internalType": "bool",
 						"name": "isRegistered",
 						"type": "bool"
@@ -80,6 +90,11 @@
 					{
 						"internalType": "string",
 						"name": "_bio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_imgUrl",
 						"type": "string"
 					}
 				],
@@ -117,11 +132,11 @@
 	},
 	"sources": {
 		"contracts/VotingProfile.sol": {
-			"keccak256": "0x1fd848070563dd386170d7ececa8a1d0972e2eb36f3a9d40d29d13bec8e112c9",
+			"keccak256": "0xdc4088aab15cf9172d633b8edfca644dd1e1807d4efd935e5c742658102c76cc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6fdde61c82e804d27daf1f2668d2e8f70a345f4daec41131125c56cd185b352a",
-				"dweb:/ipfs/QmZHz8Zx4b7ygr83yvsfw4e9y1nY4fM56LkvB1HR4WwVmh"
+				"bzz-raw://028236e384ad6edb6fa08a522e8c7d357ad25e5b529dd6be88bb6b47ce658d33",
+				"dweb:/ipfs/QmVmmVJhFwE6UnwCJW16mNLU8DAuvowRhUZoKWPEesNkvf"
 			]
 		}
 	},
