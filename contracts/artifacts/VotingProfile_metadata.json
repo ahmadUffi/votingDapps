@@ -28,11 +28,6 @@
 								"type": "string"
 							},
 							{
-								"internalType": "string",
-								"name": "imgUrl",
-								"type": "string"
-							},
-							{
 								"internalType": "bool",
 								"name": "isRegistered",
 								"type": "bool"
@@ -64,11 +59,6 @@
 					{
 						"internalType": "string",
 						"name": "bio",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "imgUrl",
 						"type": "string"
 					},
 					{
@@ -132,11 +122,11 @@
 	},
 	"sources": {
 		"contracts/VotingProfile.sol": {
-			"keccak256": "0xdc4088aab15cf9172d633b8edfca644dd1e1807d4efd935e5c742658102c76cc",
+			"keccak256": "0x9d317184ea26cf212de2ea84d6ad0670c94475e8ea114b7a36e5d30786adf140",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://028236e384ad6edb6fa08a522e8c7d357ad25e5b529dd6be88bb6b47ce658d33",
-				"dweb:/ipfs/QmVmmVJhFwE6UnwCJW16mNLU8DAuvowRhUZoKWPEesNkvf"
+				"bzz-raw://c32f57e1dbc2f15f6761e9c93b9eb65ece800e40656cf636ce5f71c38d94f12b",
+				"dweb:/ipfs/QmV6Z11iDUF8xQtBfRj4KSaM1HoZSdVsYB5Er9TknqSTuD"
 			]
 		}
 	},

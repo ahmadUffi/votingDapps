@@ -19,12 +19,12 @@
 						"components": [
 							{
 								"internalType": "string",
-								"name": "Usernmae",
+								"name": "username",
 								"type": "string"
 							},
 							{
 								"internalType": "string",
-								"name": "Bio",
+								"name": "bio",
 								"type": "string"
 							},
 							{
@@ -33,9 +33,38 @@
 								"type": "bool"
 							}
 						],
-						"internalType": "struct IProfile.profile",
+						"internalType": "struct PetisiProfile.UserProfile",
 						"name": "",
 						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "profile",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "username",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bio",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "isRegistered",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -52,9 +81,14 @@
 						"internalType": "string",
 						"name": "_bio",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_imgUrl",
+						"type": "string"
 					}
 				],
-				"name": "setUser",
+				"name": "setProfile",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -73,7 +107,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Iprofile.sol": "IProfile"
+			"contracts/PetisiProfile.sol": "PetisiProfile"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -87,12 +121,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Iprofile.sol": {
-			"keccak256": "0x32567555b61028df58c1fd0a3e180dd0efab89b2e5af35af973496b77b2e6c57",
+		"contracts/PetisiProfile.sol": {
+			"keccak256": "0x9d09409152bbea3c285e9a37e0eafbdf99352db576f5e7e1abd8a046ea585d9e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b1d1aae2ee6006b6f60ab2dec0b44264a886439edd2eff05a5e7fafa494668fa",
-				"dweb:/ipfs/QmYfmD6nHsgaq6yRVj35rMgfurQSdz4wXpT1yRrvnyhTnD"
+				"bzz-raw://ba477bb04aac7308d28a8830299b1fc0c58ea821b1a5bbf218fbfbe20cd116b0",
+				"dweb:/ipfs/QmRZCG66KXf67NbRbSB9HnAuJA5CL3rNLn2BVGfzD77nb5"
 			]
 		}
 	},

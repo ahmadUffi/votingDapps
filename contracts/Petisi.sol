@@ -15,14 +15,15 @@ contract Voting is Ownable {
         uint256 id;
         string title;
         string description;
-        string imgUrl;
         uint256 votes;
+        string imgUrl;
+        uint256 deadline;
         address author;
     }
 
     uint256 counterProposal = 0;
     // event
-    event proposalCreated(uint256 id, string title, string description, uint256 votes, address author);
+    event proposalCreated(uint256 id, string title, string description, uint256 votes, string _imgUrl, uint256 _deadline,address author);
     // mapping
     mapping (address => Proposal[]) public myProposal;
     mapping(uint256 => Proposal) public proposals;
@@ -41,11 +42,13 @@ contract Voting is Ownable {
         _;      
     }
 
-    function createProposal(string memory _title, string memory _description, string memory _imgUrl) onlyRegisterd public {
-        Proposal memory newProposal = Proposal(counterProposal, _title, _description, _imgUrl, 0, msg.sender);
+    function createProposal(string memory _title, string memory _description, string memory _imgUrl, uint256 _deadline) onlyRegisterd public {
+        uint256 durationMinutes = block.timestamp + (_deadline* 1 minutes);
+        Proposal memory newProposal = Proposal(counterProposal, _title, _description, 0, _imgUrl, durationMinutes, msg.sender);
         proposals[counterProposal] = newProposal;
         myProposal[msg.sender].push(newProposal);
         proposalList.push(proposals[counterProposal]);
+        emit proposalCreated(counterProposal, _title, _description, 0, _imgUrl, durationMinutes, msg.sender);
         counterProposal++;
     }
 
@@ -67,21 +70,4 @@ contract Voting is Ownable {
         hasvoted[msg.sender] = true;   
     }
 
-
-    function serach(string memory keyword) public view returns(Proposal[] memory result){
-        uint256 count = 0;
-        // hitung berapa yang cocok
-        for(uint i = 0; i < proposalList.length; i++){
-            
-        }
-    }
-
-    function contains(string memory str, string memory substr) internal pure returns(bool){
-        bytes memory stryBytes = bytes(str);
-        bytes memory subStrBytes = bytes(str);
-
-        for(uint i = 0; i < subStrBytes.length - subStrBytes.length; i++){
-            
-        }
-    }
 }

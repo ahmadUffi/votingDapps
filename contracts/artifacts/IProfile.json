@@ -50,7 +50,7 @@
 		"gasEstimates": null,
 		"methodIdentifiers": {
 			"getProfile(address)": "0f53a470",
-			"setUser(string,string,string)": "6b17b274"
+			"setUser(string,string)": "5728b973"
 		}
 	},
 	"abi": [
@@ -77,11 +77,6 @@
 							"type": "string"
 						},
 						{
-							"internalType": "string",
-							"name": "imgUrl",
-							"type": "string"
-						},
-						{
 							"internalType": "bool",
 							"name": "isRegistered",
 							"type": "bool"
@@ -105,11 +100,6 @@
 				{
 					"internalType": "string",
 					"name": "_bio",
-					"type": "string"
-				},
-				{
-					"internalType": "string",
-					"name": "_imgurl",
 					"type": "string"
 				}
 			],

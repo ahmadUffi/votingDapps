@@ -86,6 +86,18 @@
 					},
 					{
 						"indexed": false,
+						"internalType": "string",
+						"name": "_imgUrl",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_deadline",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
 						"internalType": "address",
 						"name": "author",
 						"type": "address"
@@ -110,6 +122,11 @@
 						"internalType": "string",
 						"name": "_imgUrl",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_deadline",
+						"type": "uint256"
 					}
 				],
 				"name": "createProposal",
@@ -139,13 +156,18 @@
 								"type": "string"
 							},
 							{
+								"internalType": "uint256",
+								"name": "votes",
+								"type": "uint256"
+							},
+							{
 								"internalType": "string",
 								"name": "imgUrl",
 								"type": "string"
 							},
 							{
 								"internalType": "uint256",
-								"name": "votes",
+								"name": "deadline",
 								"type": "uint256"
 							},
 							{
@@ -190,13 +212,18 @@
 								"type": "string"
 							},
 							{
+								"internalType": "uint256",
+								"name": "votes",
+								"type": "uint256"
+							},
+							{
 								"internalType": "string",
 								"name": "imgUrl",
 								"type": "string"
 							},
 							{
 								"internalType": "uint256",
-								"name": "votes",
+								"name": "deadline",
 								"type": "uint256"
 							},
 							{
@@ -287,13 +314,18 @@
 						"type": "string"
 					},
 					{
+						"internalType": "uint256",
+						"name": "votes",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
 						"name": "imgUrl",
 						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "votes",
+						"name": "deadline",
 						"type": "uint256"
 					},
 					{
@@ -344,13 +376,18 @@
 						"type": "string"
 					},
 					{
+						"internalType": "uint256",
+						"name": "votes",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
 						"name": "imgUrl",
 						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "votes",
+						"name": "deadline",
 						"type": "uint256"
 					},
 					{
@@ -388,13 +425,18 @@
 						"type": "string"
 					},
 					{
+						"internalType": "uint256",
+						"name": "votes",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
 						"name": "imgUrl",
 						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "votes",
+						"name": "deadline",
 						"type": "uint256"
 					},
 					{
@@ -411,57 +453,6 @@
 				"name": "renounceOwnership",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "keyword",
-						"type": "string"
-					}
-				],
-				"name": "serach",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "uint256",
-								"name": "id",
-								"type": "uint256"
-							},
-							{
-								"internalType": "string",
-								"name": "title",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "description",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "imgUrl",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "votes",
-								"type": "uint256"
-							},
-							{
-								"internalType": "address",
-								"name": "author",
-								"type": "address"
-							}
-						],
-						"internalType": "struct Voting.Proposal[]",
-						"name": "result",
-						"type": "tuple[]"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -526,7 +517,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Voting.sol": "Voting"
+			"contracts/Petisi.sol": "Voting"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -557,19 +548,19 @@
 			]
 		},
 		"contracts/Iprofile.sol": {
-			"keccak256": "0x57fed4945a8bff69874ee8ab296248366d7438da6ecc45a7dcd1e24a52a43cec",
+			"keccak256": "0x32567555b61028df58c1fd0a3e180dd0efab89b2e5af35af973496b77b2e6c57",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d4f53e93fbacd0be83c074c0c148940ddf3b48b5fa613dd537bc7be73f058560",
-				"dweb:/ipfs/QmVcw5mTXBJ3v195zKd7QND9rsaJHdMwbv6GjYMqQsMDnH"
+				"bzz-raw://b1d1aae2ee6006b6f60ab2dec0b44264a886439edd2eff05a5e7fafa494668fa",
+				"dweb:/ipfs/QmYfmD6nHsgaq6yRVj35rMgfurQSdz4wXpT1yRrvnyhTnD"
 			]
 		},
-		"contracts/Voting.sol": {
-			"keccak256": "0x74950ead57f1e769742bfd229d13cb95974eccd384b2f73eed6220801b53b12c",
+		"contracts/Petisi.sol": {
+			"keccak256": "0xe01658dac82fe4d9d63228a611b0ad61433a0654dea9fcafa52344821854bfe7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fb3a6b41767da3c9251b3a4e54019a5b3b042695b0d4611c0e1e2f9b471ca09e",
-				"dweb:/ipfs/Qmd2Krqar6Y6wUPHsR3KC6RMuG8VXz9LMqYQnkpuw4AgTu"
+				"bzz-raw://3278032b49ac90b9198401f587b612914710d9b7eadc4a3e9c0e7b4f371c9775",
+				"dweb:/ipfs/QmZDJG476PfkFmQ2BgTCSVgWVVgBN2dcRJmEJdojmvb9K3"
 			]
 		}
 	},
