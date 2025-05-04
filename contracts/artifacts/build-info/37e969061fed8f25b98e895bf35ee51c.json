@@ -1,5 +1,5 @@
 {
-	"id": "4d0c866e69681bea020b75805f05f526",
+	"id": "37e969061fed8f25b98e895bf35ee51c",
 	"_format": "hh-sol-build-info-1",
 	"solcVersion": "0.8.26",
 	"solcLongVersion": "0.8.26+commit.8a97fa7a",
@@ -7,7 +7,7 @@
 		"language": "Solidity",
 		"sources": {
 			"contracts/Iprofile.sol": {
-				"content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.24;\n\ninterface IProfile {\n    struct profile {\n        string Usernmae;\n        string Bio;\n        bool isRegistered;\n    }\n\n\n    function setUser(string memory _username, string memory _bio) external;\n    function getProfile(address _user) external view returns(profile memory);\n\n}"
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.24;\n\ninterface IProfile {\n    struct profile {\n        string Usernmae;\n        string Bio;\n        bool isRegistered;\n    }\n\n\n    function setUser(string memory _username, string memory _bio) external;\n    function getProfile(address _user) external view returns(profile memory);\n    function getImgProfile(address _user) external view returns (string memory);\n    function getUsernameProfile(address _user) external view returns (string memory);\n\n}"
 			}
 		},
 		"settings": {
@@ -51,6 +51,25 @@
 									"type": "address"
 								}
 							],
+							"name": "getImgProfile",
+							"outputs": [
+								{
+									"internalType": "string",
+									"name": "",
+									"type": "string"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "_user",
+									"type": "address"
+								}
+							],
 							"name": "getProfile",
 							"outputs": [
 								{
@@ -74,6 +93,25 @@
 									"internalType": "struct IProfile.profile",
 									"name": "",
 									"type": "tuple"
+								}
+							],
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"internalType": "address",
+									"name": "_user",
+									"type": "address"
+								}
+							],
+							"name": "getUsernameProfile",
+							"outputs": [
+								{
+									"internalType": "string",
+									"name": "",
+									"type": "string"
 								}
 							],
 							"stateMutability": "view",
@@ -125,11 +163,13 @@
 						"gasEstimates": null,
 						"legacyAssembly": null,
 						"methodIdentifiers": {
+							"getImgProfile(address)": "a2e84e6e",
 							"getProfile(address)": "0f53a470",
+							"getUsernameProfile(address)": "04386432",
 							"setUser(string,string)": "5728b973"
 						}
 					},
-					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getProfile\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"Usernmae\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"Bio\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"isRegistered\",\"type\":\"bool\"}],\"internalType\":\"struct IProfile.profile\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_username\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_bio\",\"type\":\"string\"}],\"name\":\"setUser\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Iprofile.sol\":\"IProfile\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Iprofile.sol\":{\"keccak256\":\"0x32567555b61028df58c1fd0a3e180dd0efab89b2e5af35af973496b77b2e6c57\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b1d1aae2ee6006b6f60ab2dec0b44264a886439edd2eff05a5e7fafa494668fa\",\"dweb:/ipfs/QmYfmD6nHsgaq6yRVj35rMgfurQSdz4wXpT1yRrvnyhTnD\"]}},\"version\":1}",
+					"metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getImgProfile\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getProfile\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"Usernmae\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"Bio\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"isRegistered\",\"type\":\"bool\"}],\"internalType\":\"struct IProfile.profile\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getUsernameProfile\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_username\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"_bio\",\"type\":\"string\"}],\"name\":\"setUser\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Iprofile.sol\":\"IProfile\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Iprofile.sol\":{\"keccak256\":\"0x780aff2bab0ff1d56d22b10da08f874676a0830a6fc22e4860898ffd04be9a30\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2e54a8256b68133a34b35263dce946af27f6e618fe18adc1f27aa839b50f116b\",\"dweb:/ipfs/QmXxucm7oqj4tFVk5oKLDbjUQZ9rEGiyGJTGJzLcvkBuhR\"]}},\"version\":1}",
 					"storageLayout": {
 						"storage": [],
 						"types": null
@@ -148,10 +188,10 @@
 					"absolutePath": "contracts/Iprofile.sol",
 					"exportedSymbols": {
 						"IProfile": [
-							24
+							38
 						]
 					},
-					"id": 25,
+					"id": 39,
 					"license": "MIT",
 					"nodeType": "SourceUnit",
 					"nodes": [
@@ -173,9 +213,9 @@
 							"contractDependencies": [],
 							"contractKind": "interface",
 							"fullyImplemented": false,
-							"id": 24,
+							"id": 38,
 							"linearizedBaseContracts": [
-								24
+								38
 							],
 							"name": "IProfile",
 							"nameLocation": "68:8:0",
@@ -270,7 +310,7 @@
 									"name": "profile",
 									"nameLocation": "90:7:0",
 									"nodeType": "StructDefinition",
-									"scope": 24,
+									"scope": 38,
 									"src": "83:94:0",
 									"visibility": "public"
 								},
@@ -350,7 +390,7 @@
 										"parameters": [],
 										"src": "254:0:0"
 									},
-									"scope": 24,
+									"scope": 38,
 									"src": "184:71:0",
 									"stateMutability": "nonpayable",
 									"virtual": false,
@@ -444,20 +484,188 @@
 										],
 										"src": "316:16:0"
 									},
-									"scope": 24,
+									"scope": 38,
 									"src": "260:73:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "a2e84e6e",
+									"id": 30,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getImgProfile",
+									"nameLocation": "347:13:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 26,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 25,
+												"mutability": "mutable",
+												"name": "_user",
+												"nameLocation": "369:5:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 30,
+												"src": "361:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 24,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "361:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "360:15:0"
+									},
+									"returnParameters": {
+										"id": 29,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 28,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 30,
+												"src": "399:13:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_memory_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 27,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "399:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "398:15:0"
+									},
+									"scope": 38,
+									"src": "338:76:0",
+									"stateMutability": "view",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "04386432",
+									"id": 37,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "getUsernameProfile",
+									"nameLocation": "428:18:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 33,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 32,
+												"mutability": "mutable",
+												"name": "_user",
+												"nameLocation": "455:5:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 37,
+												"src": "447:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 31,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "447:7:0",
+													"stateMutability": "nonpayable",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "446:15:0"
+									},
+									"returnParameters": {
+										"id": 36,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 35,
+												"mutability": "mutable",
+												"name": "",
+												"nameLocation": "-1:-1:-1",
+												"nodeType": "VariableDeclaration",
+												"scope": 37,
+												"src": "485:13:0",
+												"stateVariable": false,
+												"storageLocation": "memory",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_memory_ptr",
+													"typeString": "string"
+												},
+												"typeName": {
+													"id": 34,
+													"name": "string",
+													"nodeType": "ElementaryTypeName",
+													"src": "485:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_string_storage_ptr",
+														"typeString": "string"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "484:15:0"
+									},
+									"scope": 38,
+									"src": "419:81:0",
 									"stateMutability": "view",
 									"virtual": false,
 									"visibility": "external"
 								}
 							],
-							"scope": 25,
-							"src": "58:278:0",
+							"scope": 39,
+							"src": "58:445:0",
 							"usedErrors": [],
 							"usedEvents": []
 						}
 					],
-					"src": "32:304:0"
+					"src": "32:471:0"
 				},
 				"id": 0
 			}

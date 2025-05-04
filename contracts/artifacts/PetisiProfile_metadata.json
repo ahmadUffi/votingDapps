@@ -13,6 +13,25 @@
 						"type": "address"
 					}
 				],
+				"name": "getImgProfile",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
 				"name": "getProfile",
 				"outputs": [
 					{
@@ -28,6 +47,11 @@
 								"type": "string"
 							},
 							{
+								"internalType": "string",
+								"name": "imgProfile",
+								"type": "string"
+							},
+							{
 								"internalType": "bool",
 								"name": "isRegistered",
 								"type": "bool"
@@ -36,6 +60,25 @@
 						"internalType": "struct PetisiProfile.UserProfile",
 						"name": "",
 						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getUsernameProfile",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -62,6 +105,11 @@
 						"type": "string"
 					},
 					{
+						"internalType": "string",
+						"name": "imgProfile",
+						"type": "string"
+					},
+					{
 						"internalType": "bool",
 						"name": "isRegistered",
 						"type": "bool"
@@ -80,6 +128,11 @@
 					{
 						"internalType": "string",
 						"name": "_bio",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_imgProfile",
 						"type": "string"
 					}
 				],
@@ -117,11 +170,11 @@
 	},
 	"sources": {
 		"contracts/PetisiProfile.sol": {
-			"keccak256": "0xb4d5c497c1222b814f9e3b0da487b8b3a8c59a95d538c64b1bb5eefe52d1cc64",
+			"keccak256": "0x37c22c61de2ca05d458524b8c3931bdd87c8d88e67a4a0e2c016bd156f491c7e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7180c1c8e5e42916393a47e2c0a4f5f30d8f11c45d1f6003266a42e9604f5ac0",
-				"dweb:/ipfs/QmPmMojohSQ8xfYEko4P4D1P4f3pN8PYGnC6HhkFcQMP8f"
+				"bzz-raw://9bb120b4b0f3b3e840eea49a372e173486c0ce5e8d3be83f6ca31c9a0e5a914d",
+				"dweb:/ipfs/QmPp1LndAKNe1RMFpu7TfiTNXjjmLzrzMJoGuNnsgJXqcL"
 			]
 		}
 	},

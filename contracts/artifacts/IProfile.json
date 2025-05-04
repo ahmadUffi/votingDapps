@@ -49,11 +49,32 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
+			"getImgProfile(address)": "a2e84e6e",
 			"getProfile(address)": "0f53a470",
+			"getUsernameProfile(address)": "04386432",
 			"setUser(string,string)": "5728b973"
 		}
 	},
 	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_user",
+					"type": "address"
+				}
+			],
+			"name": "getImgProfile",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
 		{
 			"inputs": [
 				{
@@ -85,6 +106,25 @@
 					"internalType": "struct IProfile.profile",
 					"name": "",
 					"type": "tuple"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_user",
+					"type": "address"
+				}
+			],
+			"name": "getUsernameProfile",
+			"outputs": [
+				{
+					"internalType": "string",
+					"name": "",
+					"type": "string"
 				}
 			],
 			"stateMutability": "view",

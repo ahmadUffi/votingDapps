@@ -13,6 +13,25 @@
 						"type": "address"
 					}
 				],
+				"name": "getImgProfile",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
 				"name": "getProfile",
 				"outputs": [
 					{
@@ -36,6 +55,25 @@
 						"internalType": "struct IProfile.profile",
 						"name": "",
 						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getUsernameProfile",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -88,11 +126,11 @@
 	},
 	"sources": {
 		"contracts/Iprofile.sol": {
-			"keccak256": "0x32567555b61028df58c1fd0a3e180dd0efab89b2e5af35af973496b77b2e6c57",
+			"keccak256": "0x780aff2bab0ff1d56d22b10da08f874676a0830a6fc22e4860898ffd04be9a30",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b1d1aae2ee6006b6f60ab2dec0b44264a886439edd2eff05a5e7fafa494668fa",
-				"dweb:/ipfs/QmYfmD6nHsgaq6yRVj35rMgfurQSdz4wXpT1yRrvnyhTnD"
+				"bzz-raw://2e54a8256b68133a34b35263dce946af27f6e618fe18adc1f27aa839b50f116b",
+				"dweb:/ipfs/QmXxucm7oqj4tFVk5oKLDbjUQZ9rEGiyGJTGJzLcvkBuhR"
 			]
 		}
 	},

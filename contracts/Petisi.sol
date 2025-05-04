@@ -19,6 +19,8 @@ contract Petisi is Ownable {
         string imgUrl;
         uint256 deadline;
         address author;
+        string usernameAuthor;
+        string imgAuthore;
     }
 
     uint256 counterProposal = 0;
@@ -44,7 +46,8 @@ contract Petisi is Ownable {
 
     function createProposal(string memory _title, string memory _description, string memory _imgUrl, uint256 _deadline) onlyRegisterd public {
         uint256 durationMinutes = block.timestamp + (_deadline* 1 minutes);
-        Proposal memory newProposal = Proposal(counterProposal, _title, _description, 0, _imgUrl, durationMinutes, msg.sender);
+        // IProfile.profile memory profileTemp =  profileContract.getProfile(msg.sender);
+        Proposal memory newProposal = Proposal(counterProposal, _title, _description, 0, _imgUrl, durationMinutes, msg.sender, profileContract.g);
         proposals[counterProposal] = newProposal;
         myProposal[msg.sender].push(newProposal);
         proposalList.push(proposals[counterProposal]);

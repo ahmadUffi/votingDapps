@@ -11,5 +11,7 @@ interface IProfile {
 
     function setUser(string memory _username, string memory _bio) external;
     function getProfile(address _user) external view returns(profile memory);
+    function getImgProfile(address _user) external view returns (string memory);
+    function getUsernameProfile(address _user) external view returns (string memory);
 
 }
