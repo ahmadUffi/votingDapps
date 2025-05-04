@@ -81,11 +81,6 @@
 						"internalType": "string",
 						"name": "_bio",
 						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_imgUrl",
-						"type": "string"
 					}
 				],
 				"name": "setProfile",
@@ -122,11 +117,11 @@
 	},
 	"sources": {
 		"contracts/PetisiProfile.sol": {
-			"keccak256": "0x9d09409152bbea3c285e9a37e0eafbdf99352db576f5e7e1abd8a046ea585d9e",
+			"keccak256": "0xb4d5c497c1222b814f9e3b0da487b8b3a8c59a95d538c64b1bb5eefe52d1cc64",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ba477bb04aac7308d28a8830299b1fc0c58ea821b1a5bbf218fbfbe20cd116b0",
-				"dweb:/ipfs/QmRZCG66KXf67NbRbSB9HnAuJA5CL3rNLn2BVGfzD77nb5"
+				"bzz-raw://7180c1c8e5e42916393a47e2c0a4f5f30d8f11c45d1f6003266a42e9604f5ac0",
+				"dweb:/ipfs/QmPmMojohSQ8xfYEko4P4D1P4f3pN8PYGnC6HhkFcQMP8f"
 			]
 		}
 	},

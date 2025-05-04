@@ -4,7 +4,7 @@ pragma solidity ^0.8.24;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "contracts/Iprofile.sol";
 
-contract Voting is Ownable { 
+contract Petisi is Ownable { 
     IProfile private profileContract;
 
     constructor(address _profileContract) Ownable(msg.sender){

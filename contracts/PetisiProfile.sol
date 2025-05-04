@@ -10,7 +10,7 @@ contract PetisiProfile {
 
     mapping(address => UserProfile) public profile;
 
-    function setProfile(string memory _username, string memory _bio, string memory _imgUrl) public {
+    function setProfile(string memory _username, string memory _bio) public {
         profile[msg.sender] = UserProfile(_username, _bio, true);
     }
 
