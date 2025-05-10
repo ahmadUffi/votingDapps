@@ -107,6 +107,19 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "_isVoted",
+						"type": "bool"
+					}
+				],
+				"name": "voteSuccesed",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -174,6 +187,16 @@
 								"internalType": "address",
 								"name": "author",
 								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "usernameAuthor",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "imgAuthore",
+								"type": "string"
 							}
 						],
 						"internalType": "struct Petisi.Proposal[]",
@@ -230,6 +253,16 @@
 								"internalType": "address",
 								"name": "author",
 								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "usernameAuthor",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "imgAuthore",
+								"type": "string"
 							}
 						],
 						"internalType": "struct Petisi.Proposal[]",
@@ -332,6 +365,16 @@
 						"internalType": "address",
 						"name": "author",
 						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "usernameAuthor",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "imgAuthore",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -394,6 +437,16 @@
 						"internalType": "address",
 						"name": "author",
 						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "usernameAuthor",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "imgAuthore",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -443,6 +496,16 @@
 						"internalType": "address",
 						"name": "author",
 						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "usernameAuthor",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "imgAuthore",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -548,19 +611,19 @@
 			]
 		},
 		"contracts/Iprofile.sol": {
-			"keccak256": "0x32567555b61028df58c1fd0a3e180dd0efab89b2e5af35af973496b77b2e6c57",
+			"keccak256": "0xeac86e83bd8512b20bafcc65d34c6372fcd08fc6d920b8b32b90233595f1f01f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b1d1aae2ee6006b6f60ab2dec0b44264a886439edd2eff05a5e7fafa494668fa",
-				"dweb:/ipfs/QmYfmD6nHsgaq6yRVj35rMgfurQSdz4wXpT1yRrvnyhTnD"
+				"bzz-raw://92903528fa84c82ae24fb5b7ea903f9b99be5cbbb46faabb509d2307a720d30e",
+				"dweb:/ipfs/QmWMSRi4SAtTeCD1Uvj8qkwesRz8TErryrdZnRkhc3e8MR"
 			]
 		},
 		"contracts/Petisi.sol": {
-			"keccak256": "0x29ead0755c2421b774bb8cfda43a49c1e16c65c3c6818a84941b8db302dbc301",
+			"keccak256": "0x1460cb6ba53ee98c0eb57ab0ed83636b0856e08791881012c61c8377c49583bd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://71ef13edf2b432956fc2347695fbae7dffe8ec85cab56a04c0c615c762110bcb",
-				"dweb:/ipfs/QmYqJCoX6U6RECEmkFMwyNrg2JjXrkHZAyCe4LefYsDptA"
+				"bzz-raw://e118515b7f5e261dce8906e08029b421fd669fda6f6f7804fe9fe395700289f9",
+				"dweb:/ipfs/QmQHSD9mdRuG8aFJ3nyCvsyZjsJ1a9nfbbcJZhDhnz5CEe"
 			]
 		}
 	},
