@@ -197,6 +197,11 @@
 								"internalType": "string",
 								"name": "imgAuthore",
 								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "created",
+								"type": "uint256"
 							}
 						],
 						"internalType": "struct Petisi.Proposal[]",
@@ -263,6 +268,11 @@
 								"internalType": "string",
 								"name": "imgAuthore",
 								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "created",
+								"type": "uint256"
 							}
 						],
 						"internalType": "struct Petisi.Proposal[]",
@@ -375,6 +385,11 @@
 						"internalType": "string",
 						"name": "imgAuthore",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "created",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -447,6 +462,11 @@
 						"internalType": "string",
 						"name": "imgAuthore",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "created",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -506,6 +526,11 @@
 						"internalType": "string",
 						"name": "imgAuthore",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "created",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -619,11 +644,11 @@
 			]
 		},
 		"contracts/Petisi.sol": {
-			"keccak256": "0x1460cb6ba53ee98c0eb57ab0ed83636b0856e08791881012c61c8377c49583bd",
+			"keccak256": "0xbf66937d0cd32073dd8127861328f7619d4cba22c8cb608555c222ac57c8d477",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e118515b7f5e261dce8906e08029b421fd669fda6f6f7804fe9fe395700289f9",
-				"dweb:/ipfs/QmQHSD9mdRuG8aFJ3nyCvsyZjsJ1a9nfbbcJZhDhnz5CEe"
+				"bzz-raw://e03b8f6b04132a86c3d0e4861b2262d1dbdf236ed6c36341ccaefd2954535d1e",
+				"dweb:/ipfs/QmPjXg4V3VfDx63n64GzqQy55Drdy2ya6EZxuBhe6n1ZS1"
 			]
 		}
 	},
