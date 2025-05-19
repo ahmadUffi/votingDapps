@@ -67,9 +67,9 @@ contract Petisi is Ownable {
         return myProposal[_user];
     }
 
-    function getProposal(uint256 _id) public view returns(string memory, string memory){
-        Proposal memory proposalTemp = proposals[_id];
-        return (proposalTemp.title, proposalTemp.description);
+    function getProposal(uint256 _id) public view returns(Proposal memory){
+         return proposals[_id];
+      
     }
 
     function signing(uint256 _id) public onlyRegisterd onlyHasNoVoted(_id){

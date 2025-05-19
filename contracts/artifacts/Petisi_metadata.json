@@ -294,14 +294,61 @@
 				"name": "getProposal",
 				"outputs": [
 					{
-						"internalType": "string",
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "description",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "votes",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "imgUrl",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "deadline",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "author",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "usernameAuthor",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "imgAuthore",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "created",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Petisi.Proposal",
 						"name": "",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"type": "tuple"
 					}
 				],
 				"stateMutability": "view",
@@ -692,11 +739,11 @@
 			]
 		},
 		"contracts/Petisi.sol": {
-			"keccak256": "0xf0417cb5a238ddb4e0823d59b35e06fccb35dc4651ee40c8232281be5075ecbf",
+			"keccak256": "0xd03ce6f1b35d4fca55b2db9ebd830a4e15ca52cd6df9fd7faf5068a7b9c129fa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e30fef854da5f9aa281c0b06a40d1337a6212f164d91846161a12bc40f1028f5",
-				"dweb:/ipfs/QmSmdqvjfC3cFk6QEg1wp443psxFVdQsvummyXZBj526PM"
+				"bzz-raw://db2c46bfa53ee78f6106c6aba4f669950707be56ec56248998db7991d1db40e9",
+				"dweb:/ipfs/QmPjBrWEYhLMd24tBwLEDSvroEhLoDmApac2GmywYLgHGw"
 			]
 		}
 	},
