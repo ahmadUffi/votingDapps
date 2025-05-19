@@ -6,7 +6,6 @@ interface IProfile {
         string Usernmae;
         string Bio;
         string imgProfile;
-
         bool isRegistered;
     }
 

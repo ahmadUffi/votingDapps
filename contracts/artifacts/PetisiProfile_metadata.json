@@ -170,11 +170,11 @@
 	},
 	"sources": {
 		"contracts/PetisiProfile.sol": {
-			"keccak256": "0x37c22c61de2ca05d458524b8c3931bdd87c8d88e67a4a0e2c016bd156f491c7e",
+			"keccak256": "0xdfb528951767050ae5d542b85308887870db35a3fba20ae30ce85e47a8eb8d79",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9bb120b4b0f3b3e840eea49a372e173486c0ce5e8d3be83f6ca31c9a0e5a914d",
-				"dweb:/ipfs/QmPp1LndAKNe1RMFpu7TfiTNXjjmLzrzMJoGuNnsgJXqcL"
+				"bzz-raw://cdc77057e1fd4f2ae920c358d924524a5166d4a0733c40e7db1ea745ef14af93",
+				"dweb:/ipfs/QmWPuhwuCySgbF68nchA6b8T4iDz7qD2uHt9MBm8aWoZJE"
 			]
 		}
 	},

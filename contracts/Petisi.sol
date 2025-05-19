@@ -27,11 +27,13 @@ contract Petisi is Ownable {
     uint256 counterProposal = 0;
     // event
     event proposalCreated(uint256 id, string title, string description, uint256 votes, string _imgUrl, uint256 _deadline,address author);
-    event voteSuccesed(bool _isVoted);
+    event SignSuccess(bool _isVoted);
     // mapping
     mapping (address => Proposal[]) public myProposal;
     mapping(uint256 => Proposal) public proposals;
-    mapping(address => bool) public hasvoted;
+    mapping(uint256 => mapping (address => bool)) public hasvoted;
+    mapping (uint256 => address[]) public voter;
+    
     // array
     Proposal[] public proposalList;
 
@@ -41,8 +43,8 @@ contract Petisi is Ownable {
         _;
     }
 
-    modifier onlyHasNoVoted(){
-        require(!hasvoted[msg.sender ], "You are already Voted!");
+    modifier onlyHasNoVoted(uint _id){
+        require(!hasvoted[_id][msg.sender], "You are already Voted!");
         _;      
     }
 
@@ -70,10 +72,16 @@ contract Petisi is Ownable {
         return (proposalTemp.title, proposalTemp.description);
     }
 
-    function vote(uint256 _id) public onlyRegisterd onlyHasNoVoted{
+    function signing(uint256 _id) public onlyRegisterd onlyHasNoVoted(_id){
         proposals[_id].votes += 1;
-        hasvoted[msg.sender] = true;   
-        emit voteSuccesed(hasvoted[msg.sender]);
+        proposalList[_id].votes = proposals[_id].votes ;
+        hasvoted[_id][msg.sender] = true;
+        voter[_id].push(msg.sender);
+        emit SignSuccess(hasvoted[_id][msg.sender]);
+    }
+
+    function getSigner(uint256 _id) public view returns (address[] memory){
+        return voter[_id];
     }
 
 }

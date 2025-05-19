@@ -47,6 +47,11 @@
 								"type": "string"
 							},
 							{
+								"internalType": "string",
+								"name": "imgProfile",
+								"type": "string"
+							},
+							{
 								"internalType": "bool",
 								"name": "isRegistered",
 								"type": "bool"
@@ -90,6 +95,11 @@
 						"internalType": "string",
 						"name": "_bio",
 						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_imgProfile",
+						"type": "string"
 					}
 				],
 				"name": "setUser",
@@ -126,11 +136,11 @@
 	},
 	"sources": {
 		"contracts/Iprofile.sol": {
-			"keccak256": "0x780aff2bab0ff1d56d22b10da08f874676a0830a6fc22e4860898ffd04be9a30",
+			"keccak256": "0xa1c266f16d823d8ac736e9f098da5da62c22c0d831f3c99cad9f444eb4992afd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2e54a8256b68133a34b35263dce946af27f6e618fe18adc1f27aa839b50f116b",
-				"dweb:/ipfs/QmXxucm7oqj4tFVk5oKLDbjUQZ9rEGiyGJTGJzLcvkBuhR"
+				"bzz-raw://9a023d84ad50b68301d3569cb1b26a458ab6a95d0ccb09f5a78de52146090af5",
+				"dweb:/ipfs/Qmd6N3przh9rbtqo6Hsixr56F22V6sC4iLDGfvJnfWDEuU"
 			]
 		}
 	},

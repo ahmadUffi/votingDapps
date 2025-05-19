@@ -24,5 +24,5 @@ contract PetisiProfile {
 
     function getProfile(address _user) public view returns(UserProfile memory){
         return  profile[_user];
-    }
+    }   
 }
